@@ -17,7 +17,12 @@
 <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet" />
 <style>
   :root{--coral:#F7714E;--coral-dark:#DE5733;--cream:#F8F6F1;--surface:#fff;
-    --ink:#2D2A33;--ink2:#5C5768;--ink3:#6E687C;--line:#EBE6DC;--accent:#6E6CE6;--link:#B03E16;}
+    --ink:#2D2A33;--ink2:#5C5768;--ink3:#6E687C;--line:#EBE6DC;--accent:#6E6CE6;--link:#B03E16;
+    color-scheme:light dark;}
+  @media (prefers-color-scheme:dark){
+    :root{--cream:#1F1B26;--surface:#2A2532;--ink:#EDE9F2;--ink2:#CFC9DB;--ink3:#A59DB3;
+      --line:#3A3444;--accent:#9D9BF0;--link:#FF9E7A;}
+  }
   *{box-sizing:border-box}
   body{margin:0;background:var(--cream);color:var(--ink2);
     font-family:Nunito,-apple-system,system-ui,sans-serif;line-height:1.65}
