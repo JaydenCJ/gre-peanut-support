@@ -8,6 +8,15 @@ Static support and privacy-policy site for **GRE Peanut**, an offline GRE prep a
 | --- | --- |
 | `index.html` | Support page — about, contact, and FAQ |
 | `privacy.html` | Privacy policy |
+| `404.html` | Branded not-found page (GitHub Pages custom 404) |
+
+## Assets
+
+| File | Purpose |
+| --- | --- |
+| `favicon-32.png` | 32×32 favicon |
+| `apple-touch-icon.png` | iOS home-screen icon |
+| `og-image.png` | Social share image (Open Graph / Twitter card) |
 
 ## Development
 
@@ -21,7 +30,7 @@ python3 -m http.server 8000
 
 ## Notes
 
-- Both pages are self-contained: one inline stylesheet each, Google Fonts as the only
+- All pages are self-contained: one inline stylesheet each, Google Fonts as the only
   external resource.
 - Light and dark color schemes are supported via `prefers-color-scheme`.
 - GRE is a registered trademark of ETS. GRE Peanut is independent and is not endorsed
