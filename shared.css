@@ -1,0 +1,43 @@
+/* Shared styles for index.html and privacy.html.
+   404.html intentionally keeps an inline copy of these rules: GitHub Pages
+   renders it at arbitrary missing paths, where a relative stylesheet URL
+   would break. */
+@font-face{font-family:'Fredoka';font-style:normal;font-weight:300 700;font-display:swap;
+  src:url('fonts/fredoka-latin.woff2') format('woff2')}
+@font-face{font-family:'Nunito';font-style:normal;font-weight:200 1000;font-display:swap;
+  src:url('fonts/nunito-latin.woff2') format('woff2')}
+:root{
+  --coral:#F7714E; --coral-dark:#DE5733; --cream:#F8F6F1; --surface:#fff;
+  --ink:#2D2A33; --ink2:#5C5768; --ink3:#6E687C; --line:#EBE6DC; --accent:#6E6CE6;
+  --link:#B03E16; --btn:#B03E16; --btn-ink:#fff; --btn-hover:#96340F;
+  color-scheme:light dark;
+}
+@media (prefers-color-scheme:dark){
+  :root{
+    --cream:#1F1B26; --surface:#2A2532; --ink:#EDE9F2; --ink2:#CFC9DB; --ink3:#A59DB3;
+    --line:#3A3444; --accent:#9D9BF0; --link:#FF9E7A; --btn:#F7714E; --btn-ink:#2D2A33; --btn-hover:#FF8A66;
+  }
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--cream);
+  font-family:Nunito,-apple-system,system-ui,sans-serif;
+  -webkit-text-size-adjust:100%;text-size-adjust:100%}
+.wrap{max-width:720px;margin:0 auto;padding:0 22px;
+  padding-left:max(22px,env(safe-area-inset-left));padding-right:max(22px,env(safe-area-inset-right))}
+a{color:var(--link)}
+a:hover{text-decoration-thickness:2px}
+:focus-visible{outline:3px solid var(--accent);outline-offset:2px;border-radius:4px}
+.hero{background:linear-gradient(135deg,#FFC06A,#FF9356 40%,var(--coral) 75%,var(--coral-dark));
+  color:#401D0F;text-align:center;
+  padding-left:max(22px,env(safe-area-inset-left));padding-right:max(22px,env(safe-area-inset-right))}
+h1{font-family:Fredoka,sans-serif;font-weight:700;letter-spacing:-.01em}
+h2{font-family:Fredoka,sans-serif;font-weight:600;color:var(--ink)}
+.nowrap{white-space:nowrap}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:18px;
+  box-shadow:0 8px 24px rgba(60,50,45,.05)}
+@media (prefers-color-scheme:dark){
+  .card{box-shadow:0 8px 24px rgba(0,0,0,.35)}
+}
+footer{text-align:center;color:var(--ink3);font-size:13px;padding:34px 22px 50px;
+  padding-left:max(22px,env(safe-area-inset-left));padding-right:max(22px,env(safe-area-inset-right))}
+footer a{color:var(--ink3);display:inline-block;padding:13px 8px;margin:-13px -4px}
