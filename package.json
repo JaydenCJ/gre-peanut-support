@@ -1,0 +1,20 @@
+{
+  "name": "gre-peanut-support",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Static support site for GRE Peanut. No build step; these dev dependencies only power the checks in scripts/.",
+  "type": "module",
+  "scripts": {
+    "test": "npm run test:html && npm run test:links && npm run test:smoke && npm run test:axe && npm run test:contrast",
+    "test:html": "html-validate index.html privacy.html 404.html",
+    "test:links": "node scripts/check-links.mjs",
+    "test:smoke": "node scripts/render-smoke.mjs",
+    "test:axe": "node scripts/axe-scan.mjs",
+    "test:contrast": "node scripts/hero-contrast.mjs"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "^4.12.1",
+    "html-validate": "^11.5.5",
+    "playwright": "^1.61.1"
+  }
+}
