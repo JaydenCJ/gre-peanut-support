@@ -2,67 +2,143 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>GRE Peanut — Support</title>
-<meta name="description" content="Support and help for GRE Peanut, an offline GRE prep app." />
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>GRE Peanut Support — Offline GRE Prep &amp; Vocabulary App</title>
+<meta name="description" content="Get help with GRE Peanut, the offline GRE prep and vocabulary app — the free trial, one-time purchase, and restoring purchases. Read the FAQ or email support." />
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#F7714E" />
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#1F1B26" />
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🥜</text></svg>" />
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png" />
+<link rel="apple-touch-icon" href="apple-touch-icon.png" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="GRE Peanut" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:title" content="GRE Peanut Support — Offline GRE Prep &amp; Vocabulary App" />
+<meta property="og:description" content="Get help with GRE Peanut, the offline GRE prep and vocabulary app — the free trial, one-time purchase, and restoring purchases. Read the FAQ or email support." />
+<meta property="og:url" content="https://jaydencj.github.io/gre-peanut-support/" />
+<meta property="og:image" content="https://jaydencj.github.io/gre-peanut-support/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="GRE Peanut — offline GRE prep app. Peanut mascot on an orange gradient." />
+<meta name="twitter:card" content="summary_large_image" />
+<link rel="canonical" href="https://jaydencj.github.io/gre-peanut-support/" />
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Does GRE Peanut work offline?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. All content and study help run on your device. The only network connection the app ever makes is to Apple's App Store, when you buy or restore the one-time purchase."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do the trial and the purchase work?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Every section is free to try for three days. After that, a single one-time In-App Purchase unlocks the full app permanently. There is no subscription. Vocabulary practice stays free even after the trial."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I restore my purchase?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Open Settings inside the app and tap \"Restore purchase\". Restoring uses your Apple ID, so it works on any iPhone signed in to the same Apple ID."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is the practice score my real GRE score?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Mock exams give a practice estimate to track your progress; it is not an official GRE score."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is this app affiliated with ETS?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. GRE is a registered trademark of ETS. GRE Peanut is independent and is not endorsed or approved by ETS. All questions and explanations are original."
+      }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://jaydencj.github.io/gre-peanut-support/#org",
+      "name": "GRE Peanut",
+      "url": "https://jaydencj.github.io/gre-peanut-support/",
+      "logo": "https://jaydencj.github.io/gre-peanut-support/apple-touch-icon.png",
+      "email": "gijirokuman@gmail.com"
+    },
+    {
+      "@type": "MobileApplication",
+      "name": "GRE Peanut",
+      "alternateName": "GRE Peanut: Ace the GRE",
+      "operatingSystem": "iOS",
+      "applicationCategory": "EducationalApplication",
+      "description": "Offline GRE prep app for iPhone: a goal-paced daily study plan, high-frequency vocabulary with spaced repetition and human-recorded audio, verbal and quant practice, a writing lab, and full-length mock exams. No account, no ads, no subscription.",
+      "publisher": { "@id": "https://jaydencj.github.io/gre-peanut-support/#org" }
+    }
+  ]
+}
+</script>
+<link rel="stylesheet" href="shared.css" />
 <style>
-  :root{
-    --coral:#F7714E; --coral-dark:#DE5733; --cream:#F8F6F1; --surface:#fff;
-    --ink:#2D2A33; --ink2:#5C5768; --ink3:#787285; --line:#EBE6DC; --accent:#6E6CE6;
-  }
-  *{box-sizing:border-box}
-  body{margin:0;background:var(--cream);color:var(--ink);
-    font-family:Nunito,-apple-system,system-ui,sans-serif;line-height:1.6}
-  .wrap{max-width:720px;margin:0 auto;padding:0 22px}
-  a{color:var(--coral-dark)}
-  .hero{background:linear-gradient(135deg,#FFC06A,#FF9356 40%,var(--coral) 75%,var(--coral-dark));
-    color:#fff;padding:64px 22px 56px;text-align:center}
+  body{color:var(--ink);line-height:1.6}
+  .hero{padding-top:64px;padding-bottom:56px}
   .hero .peanut{font-size:60px;line-height:1}
-  h1{font-family:Fredoka,sans-serif;font-weight:700;font-size:38px;margin:14px 0 6px;letter-spacing:-.01em}
-  .tag{font-size:17px;opacity:.95;font-weight:600;margin:0}
-  h2{font-family:Fredoka,sans-serif;font-weight:600;font-size:23px;color:var(--ink);margin:40px 0 12px}
+  h1{font-size:38px;margin:14px 0 6px}
+  .tag{font-size:17px;font-weight:600;margin:0}
+  h2{font-size:23px;margin:40px 0 12px}
   section{padding:8px 0}
-  .card{background:var(--surface);border:1px solid var(--line);border-radius:18px;
-    padding:22px 24px;margin:14px 0;box-shadow:0 8px 24px rgba(60,50,45,.05)}
-  ul{padding-left:20px;margin:8px 0}
-  li{margin:6px 0;color:var(--ink2)}
+  .card{padding:22px 24px;margin:14px 0}
+  .card > p{margin:0}
   .q{font-family:Fredoka,sans-serif;font-weight:600;color:var(--ink);margin:18px 0 4px;font-size:16px}
   .q:first-child{margin-top:4px}
   .a{color:var(--ink2);margin:0}
-  .mail{display:inline-block;margin-top:6px;background:var(--coral);color:#fff;text-decoration:none;
-    font-weight:800;padding:12px 22px;border-radius:999px}
+  .mail{display:inline-block;margin-top:6px;background:var(--btn);color:var(--btn-ink);text-decoration:none;
+    font-weight:800;padding:12px 22px;border-radius:999px;text-align:center;
+    transition:background-color .15s ease,transform .1s ease}
+  .mail:hover{background:var(--btn-hover)}
+  .mail:active{transform:translateY(1px)}
   .disc{color:var(--ink3);font-size:13px;margin-top:28px}
-  footer{text-align:center;color:var(--ink3);font-size:13px;padding:34px 22px 50px}
-  footer a{color:var(--ink3)}
 </style>
 </head>
 <body>
-  <div class="hero">
-    <div class="peanut">🥜</div>
+  <header class="hero">
+    <div class="peanut" aria-hidden="true">🥜</div>
     <h1>GRE Peanut</h1>
-    <p class="tag">Offline GRE prep with Peanut, your study buddy.</p>
-  </div>
+    <p class="tag">Support &amp; FAQ for the offline GRE prep app, with Peanut, your study buddy.</p>
+  </header>
 
-  <div class="wrap">
+  <main class="wrap">
     <section>
-      <h2>About</h2>
+      <h2>About GRE Peanut</h2>
       <div class="card">
-        GRE Peanut builds a personalized day-by-day study plan paced to your exam date, and runs
-        entirely on your device. Vocabulary with real-human audio, verbal and quant practice,
-        reading with Evidence Hunt, a writing lab, and full-length mock exams, all with clear
-        explanations. No account, no ads, no subscription.
+        <p>GRE Peanut is an iPhone app (iOS 17+) that builds a personalized day-by-day study plan
+        paced to your exam date, and runs entirely on your device. Vocabulary with human-recorded
+        audio, verbal and quant practice, reading with Evidence Hunt, a writing lab, and full-length
+        mock exams, all with clear explanations. No account, no ads, no subscription.</p>
       </div>
     </section>
 
     <section>
-      <h2>Support</h2>
+      <h2>Contact Support</h2>
       <div class="card">
-        Questions, bug reports, or feedback? We'd love to hear from you, and we usually reply
-        within two business days.
-        <br />
+        <p>Questions, bug reports, or feedback? We'd love to hear from you, and we usually reply
+        within two business days.</p>
         <a class="mail" href="mailto:gijirokuman@gmail.com">Email gijirokuman@gmail.com</a>
       </div>
     </section>
@@ -70,30 +146,31 @@
     <section>
       <h2>FAQ</h2>
       <div class="card">
-        <p class="q">Does GRE Peanut work offline?</p>
-        <p class="a">Yes. All content and study help run on your device. The only time the app uses
-          the network is Apple's App Store, and only when you make or restore the one-time purchase.</p>
+        <h3 class="q">Does GRE Peanut work offline?</h3>
+        <p class="a">Yes. All content and study help run on your device. The only network connection
+          the app ever makes is to Apple's App Store, when you buy or restore the one-time purchase.</p>
 
-        <p class="q">How does the trial and purchase work?</p>
-        <p class="a">Every section is free for 3 days. After that, a single one-time In-App Purchase
-          unlocks the full app permanently. There is no subscription. Vocabulary practice stays free.</p>
+        <h3 class="q">How do the trial and the purchase work?</h3>
+        <p class="a">Every section is free to try for three days. After that, a single one-time In-App
+          Purchase unlocks the full app permanently. There is no subscription. Vocabulary practice
+          stays free even after the trial.</p>
 
-        <p class="q">How do I restore my purchase?</p>
+        <h3 class="q">How do I restore my purchase?</h3>
         <p class="a">Open Settings inside the app and tap "Restore purchase". Restoring uses your
-          Apple ID, so it works on any device you own.</p>
+          Apple ID, so it works on any iPhone signed in to the same Apple ID.</p>
 
-        <p class="q">Is the practice score my real GRE score?</p>
+        <h3 class="q">Is the practice score my real GRE score?</h3>
         <p class="a">No. Mock exams give a practice estimate to track your progress; it is not an
           official GRE score.</p>
 
-        <p class="q">Is this app affiliated with ETS?</p>
+        <h3 class="q">Is this app affiliated with ETS?</h3>
         <p class="a">No. GRE is a registered trademark of ETS. GRE Peanut is independent and is not
           endorsed or approved by ETS. All questions and explanations are original.</p>
       </div>
       <p class="disc">GRE is a registered trademark of ETS. This app is independent and is not
         endorsed or approved by ETS.</p>
     </section>
-  </div>
+  </main>
 
   <footer>
     © 2026 GRE Peanut · <a href="privacy.html">Privacy Policy</a> · <a href="mailto:gijirokuman@gmail.com">Contact</a>
